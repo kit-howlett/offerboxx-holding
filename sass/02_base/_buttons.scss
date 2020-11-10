@@ -1,0 +1,19 @@
+.btn {
+  padding: 0.625em 1.625em;
+  text-align: center;
+  font-weight: $semibold;
+  border-radius: 5px;
+  cursor: pointer;
+
+  &--primary {
+    background: $dark-accent-color;
+    color: #fff;
+    border: 2px solid $dark-accent-color;
+
+    &:hover {
+      background: #fff;
+      border: 2px solid $dark-accent-color;
+      color: $dark-accent-color;
+    }
+  }
+}

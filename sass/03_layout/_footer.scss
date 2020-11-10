@@ -1,0 +1,34 @@
+.site-footer {
+  margin-top: auto;
+  padding: 2.5em 0;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
+
+  &__logo {
+    width: 175px;
+  }
+
+  &__legal {
+    margin-top: 1em;
+  }
+
+  &__legal-copy {
+    color: $secondary-color;
+  }
+}
+
+.footer-menu {
+
+  &__container {
+    display: flex;
+  }
+
+  &__link {
+    padding: 1em;
+  }
+}

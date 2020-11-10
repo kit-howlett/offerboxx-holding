@@ -1,0 +1,290 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    -webkit-transition-duration: 0.01ms !important;
+            transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  letter-spacing: -0.015em;
+  color: #2B2942;
+}
+
+ul, ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #2B2942;
+}
+
+a:hover, a:focus {
+  color: #5956E9;
+}
+
+.page-container {
+  max-width: 1364px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.font--xxx-large {
+  font-size: 1.75em;
+}
+
+.font--xx-large {
+  font-size: 1.5em;
+}
+
+.font--x-large {
+  font-size: 1.25em;
+}
+
+.font--large {
+  font-size: 1.125em;
+}
+
+.font--regular {
+  font-size: 1em;
+}
+
+.font--small {
+  font-size: 0.875em;
+}
+
+.font--x-small {
+  font-size: 0.75em;
+}
+
+.font--semi-bold {
+  font-weight: 600;
+}
+
+.font--bold {
+  font-weight: 700;
+}
+
+.font--secondary-color {
+  color: #727C9F;
+}
+
+.font--accent-color {
+  color: #5956E9;
+}
+
+.signup-form__input-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.signup-form__input {
+  height: auto !important;
+  border: none !important;
+  padding-left: 1.25em !important;
+  font: inherit;
+  background-color: #F8F8F8 !important;
+  border-top-right-radius: 0 !important;
+  border-top-left-radius: 5px !important;
+  border-bottom-right-radius: 0 !important;
+  border-bottom-left-radius: 5px !important;
+}
+
+.signup-form .btn {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.signup-form ::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #2B2942;
+  opacity: .4;
+}
+
+.signup-form ::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #2B2942;
+  opacity: .4;
+}
+
+.signup-form :-ms-input-placeholder {
+  /* IE 10+ */
+  color: #2B2942;
+  opacity: .4;
+}
+
+.signup-form :-moz-placeholder {
+  /* Firefox 18- */
+  color: #2B2942;
+  opacity: .4;
+}
+
+.btn {
+  padding: 0.625em 1.625em;
+  text-align: center;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn--primary {
+  background: #5956E9;
+  color: #fff;
+  border: 2px solid #5956E9;
+}
+
+.btn--primary:hover {
+  background: #fff;
+  border: 2px solid #5956E9;
+  color: #5956E9;
+}
+
+.site-header {
+  padding: 3.125em;
+}
+
+.site-header__logo {
+  margin: 0 auto 2.5em;
+  width: 325px;
+}
+
+.site-footer {
+  margin-top: auto;
+  padding: 2.5em 0;
+}
+
+.site-footer__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.site-footer__logo {
+  width: 175px;
+}
+
+.site-footer__legal {
+  margin-top: 1em;
+}
+
+.site-footer__legal-copy {
+  color: #727C9F;
+}
+
+.footer-menu__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer-menu__link {
+  padding: 1em;
+}
+/*# sourceMappingURL=main.css.map */
