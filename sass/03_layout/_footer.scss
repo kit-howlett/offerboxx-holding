@@ -1,34 +1,60 @@
 .site-footer {
-  margin-top: auto;
-  padding: 2.5em 0;
+  padding: 0 0 2.5em;
 
   &__inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 100%;
+
+    @include rmw(768) {
+      flex-direction: column;
+    }
   }
 
   &__logo {
-    width: 175px;
-  }
+    width: 150px;
 
-  &__legal {
-    margin-top: 1em;
+    @include rmw(768) {
+      flex-direction: column;
+      margin-bottom: .5em;
+    }
   }
 
   &__legal-copy {
     color: $secondary-color;
+
+    @include rmw(768) {
+      text-align: center;
+    }
   }
 }
 
 .footer-menu {
 
+  @include rmw(370) {
+    padding: 1em 0;
+  }
+
   &__container {
     display: flex;
+
+    @include rmw(370) {
+      flex-direction: column;
+      text-align: center;
+    }
   }
 
   &__link {
-    padding: 1em;
+    display: inline-block;
+    padding: 1.5em 1em;
+
+    @include rmw(768) {
+      padding: 1em;
+    }
+
+    @include rmw(370) {
+      padding: .125em 0;
+    }
   }
 }

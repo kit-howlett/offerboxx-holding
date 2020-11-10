@@ -1,0 +1,33 @@
+.hero {
+
+  &__title {
+    margin: 0 auto .5em;
+    max-width: 625px;
+    font-size: 2em;
+  }
+
+  &__para {
+    margin: 0 auto;
+    max-width: 625px;
+  }
+
+  &__cta {
+    margin: 2em 0 0;
+
+    a {
+      display: inline-block;
+      color: $dark-accent-color;
+      padding: .75em;
+
+      &:hover,
+      &:focus {
+        outline-style: dashed;
+      }
+
+      .fas {
+        padding-right: 1em;
+      }
+    }
+
+  }
+}

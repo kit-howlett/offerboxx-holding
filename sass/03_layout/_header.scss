@@ -1,12 +1,23 @@
 .site-header {
-  padding: 3.125em;
-  
-  &__inner {
-    
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.5em 0;
+
+  @include rmw(768) {
+    flex-direction: column;
   }
 
   &__logo {
-    margin: 0 auto 2.5em;
-    width: 325px;
+    width: 200px;
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+
+    @include rmw(768) {
+      display: none;
+    }
   }
 }

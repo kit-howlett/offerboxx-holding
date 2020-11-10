@@ -3,8 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Search Offerboxx ">
-  <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <title>Offerboxx - Coming Soon!</title>
   <!-- Google Fonts Stylesheet -->
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
@@ -16,35 +14,19 @@
   <script src="https://kit.fontawesome.com/ef41d4296e.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <!-- MAIN HEADER -->
-  <header id="site-header" class="site-header page-container">
-    <!-- Site Logo -->
-    <a href="index.html">
-      <img src="/img/offerboxx_primary-logo.svg" alt="Offerboxx Logo" class="site-header__logo">
-    </a>
-    <!-- Site Navigation -->
-    <nav class="site-header__nav">
-      <button class="btn btn--secondary">Registar Your Business</button>
-    </nav>
+  <!------------ MAIN HEADER ------------>
+  <header id="site-header" class="site-header">
+    <div class="site-header__inner page-container">
+      <img src="/img/offerboxx_primary-logo.svg" class="site-header__logo" alt="Offerboxx Logo">
+    </div>
   </header>
 
   <!------------ MAIN CONTENT ------------>
-  <main class="page-container">
-    <section class="hero">
-      <h1 class="hero__title text-center font--xxx-large font--bold">Offerboxx, Coming Soon!</h1>
-      <p class="hero__para text-center">We're busy building a platform designed to support local businesses through the current COVID19 crisis. Our platform makes it easy for you to connect with your customers and keep them up to speed on the ways your business is adapting to a new level of normal. Offerboxx is <span class="font--bold">FREE</span> to join so why not get your business listed!</p>
-      <div class="hero__cta text-center">
-        <a href="#" class="font--bold"><i class="fas fa-mouse-pointer"></i>Registar Your Business Here</a>
-      </div>
-    </section>    
-  </main>
-
-  <!------------ MAIN FOOTER ------------>
-  <footer id="site-footer" class="site-footer page-container">
-    <!-- Footer Mailchimp Signup Form -->
+  <main class="main-content page-container">
+    <!-- Begin Mailchimp Signup Form -->
     <div id="mc_embed_signup" class="signup-form">
-      <h2 class="signup-form__heading text-center font--large font--bold">Get notified when we launch! 🚀</h2>
-      <p class="signup-form__para text-center">Want to know when our platform goes live? Simply pop your email address down in the form below and we will notify you when our site has launched. Exciting times!</p>
+      <h2 class="signup-form__heading text-center font--x-large font--semi-bold">Get notified when we launch!</h2>
+      <p class="signup-form__para text-center">Want to know when we launch? Simply pop your email address in the form below and we will notify you when our site goes live. Exciting times!</p>
       <form action="https://offerboxx.us2.list-manage.com/subscribe/post?u=c1e52f73e7e65b7cb2d2b6e6f&amp;id=d12adef66a" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
         <div id="mc_embed_signup_scroll" class="signup-form__input-wrapper">
           <input type="email" value="" name="EMAIL" class="email signup-form__input" id="mce-EMAIL" placeholder="Email Address" aria-label="Email Address" required>
@@ -56,8 +38,10 @@
         </div>
       </form>
     </div>
+  </main>
 
-    <!-- Footer Main Content -->
+  <!------------ MAIN FOOTER ------------>
+  <footer id="site-footer" class="site-footer page-container">
     <div class="site-footer__inner">
       <!-- Footer Logo -->
       <img src="/img/offerboxx_primary-logo.svg" alt="Offerboxx Logo" class="site-footer__logo">
@@ -69,10 +53,9 @@
         </ul>
       </nav>
     </div>
-    
     <!-- Footer Copyright Notice -->
     <div class="site-footer__legal">
-      <p class="site-footer__legal-copy"><small>&copy; Copyright 2020 Offerboxx. All rights reserved.</small></p>
+      <small class="site-footer__legal-copy">&copy; Copyright 2020 Offerboxx. All rights reserved.</small>
     </div>
   </footer>
 </body>

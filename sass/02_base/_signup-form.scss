@@ -1,11 +1,38 @@
 .signup-form {
+  margin: 3.125em 0 3.125em;
+
+  form {
+    margin: 0 auto;
+    max-width: 625px;
+    padding: 1.25em 0 0 !important;
+
+    @include rmw(768) {
+      max-width: 500px;
+    }
+  }
+
+  &__heading {
+    margin: 0 auto .5em;
+    max-width: 625px;
+  }
+
+  &__para {
+    margin: 0 auto;
+    max-width: 625px;
+  }
 
   &__input-wrapper {
     display: flex;
+
+    @include rmw(768) {
+      flex-direction: column;
+    }
   }
 
   &__input {
+    margin: 0 !important;
     height: auto !important;
+    width: 100% !important;
     border: none !important;
     padding-left: 1.25em !important; 
     font: inherit;
@@ -14,11 +41,29 @@
     border-top-left-radius: 5px !important;
     border-bottom-right-radius: 0 !important;
     border-bottom-left-radius: 5px !important;
+
+    &:focus {
+      outline-color: $dark-accent-color;
+    }
+
+    @include rmw(768) {
+      padding: .625em 1.625em !important;
+      text-align: center;
+      border-top-right-radius: 5px !important;
+      border-top-left-radius: 5px !important;
+      border-bottom-right-radius: 0 !important;
+      border-bottom-left-radius: 0 !important;
+    }
   }
 
   .btn {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
+
+    @include rmw(768) {
+      border-top-right-radius: 0;
+      border-bottom-left-radius: 5px;
+    }
   }
 
   ::-webkit-input-placeholder { /* Chrome/Opera/Safari */

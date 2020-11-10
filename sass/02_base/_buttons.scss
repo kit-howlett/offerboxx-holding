@@ -16,4 +16,16 @@
       color: $dark-accent-color;
     }
   }
+
+  &--secondary {
+    background: #fff;
+    color: $dark-accent-color;
+    border: 2px solid $dark-accent-color;;
+
+    &:hover {
+      background: $dark-accent-color;
+      border: 2px solid $dark-accent-color;
+      color: #fff;
+    }
+  }
 }
