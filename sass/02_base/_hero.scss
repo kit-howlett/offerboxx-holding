@@ -4,6 +4,10 @@
     margin: 0 auto .5em;
     max-width: 625px;
     font-size: 2em;
+
+    @include rmw(768) {
+      font-size: 1.75em;
+    }
   }
 
   &__para {

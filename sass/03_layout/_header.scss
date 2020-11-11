@@ -1,8 +1,13 @@
 .site-header {
   display: flex;
+  margin-bottom: auto;
   justify-content: space-between;
   align-items: center;
   padding: 2.5em 0;
+
+  &--page {
+    margin-bottom: 0;
+  }
 
   @include rmw(768) {
     flex-direction: column;

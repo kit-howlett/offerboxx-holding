@@ -1,0 +1,28 @@
+.page {
+
+  &__title {
+    margin: 0 auto 1.25em;
+  }
+
+  &__subtitle {
+    margin: 0 0 1em;
+  }
+
+  &__text {
+    margin: 0 auto;
+    max-width: 1080px;
+    padding: 0 2em;
+
+    @include rmw(768) {
+      padding: 0;
+    }
+
+    section {
+      margin-bottom: 3em;
+    }
+  }
+
+  p + p {
+    margin: 1em 0;
+  }
+}
